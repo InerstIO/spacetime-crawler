@@ -10,6 +10,9 @@ from uuid import uuid4
 from urlparse import urlparse, parse_qs
 from uuid import uuid4
 
+from collections import Counter
+import tldextract
+
 logger = logging.getLogger(__name__)
 LOG_HEADER = "[CRAWLER]"
 
@@ -22,6 +25,9 @@ class CrawlerFrame(IApplication):
         self.starttime = time()
         self.app_id = "Fengy12"
         self.frame = frame
+        self.succ_ctr, self.invalid_ctr = 0, 0
+        self.subdom = Counter()
+        self.max_out = ['',0]
 
 
     def initialize(self):
@@ -29,8 +35,6 @@ class CrawlerFrame(IApplication):
         l = Fengy12Link("http://www.ics.uci.edu/")
         print l.full_url
         self.frame.add(l)
-        #print self.frame.get(Fengy12Link)
-        #print 'fuxk'
 
     def update(self):
         unprocessed_links = self.frame.get(OneFengy12UnProcessedLink)
@@ -41,11 +45,20 @@ class CrawlerFrame(IApplication):
             try:
                 links = extract_next_links(downloaded)
             except Exception as e:
+                self.invalid_ctr += 1 # count invalid links
                 print('error:',e)
                 with open('err_url', 'a') as f:
                     f.write(str(e)+' | '+str(downloaded.url)+' | '+str(downloaded.error_message)+'\n')
             #links = extract_next_links(downloaded)
             else:
+                self.succ_ctr += 1 # count number of successfully downloaded links
+                #print link
+                ext = tldextract.extract(link.full_url) 
+                subdomain = '.'.join(ext[:2])
+                self.subdom[subdomain] += len(links) # count number of URLs from subdomains
+                if self.max_out[1] < len(links): # keep track of the page with most out links
+                    self.max_out[1] = len(links)
+                    self.max_out[0] = link
                 for l in links:
                     if is_valid(l):
                         self.frame.add(Fengy12Link(l))
@@ -69,13 +82,7 @@ def extract_next_links(rawDataObj):
     '''
     html = etree.HTML(rawDataObj.content)
     outputLinks = html.xpath('.//*/@href')
-    '''
-    outputLinks.append("http://www.cs.uci.edu/")
-    outputLinks.append("http://www.ics.uci.edu/")
-    outputLinks.append("http://www.ics.uci.edu/about/")
-    outputLinks.append("www.ics.uci.edu/community/news/view_news?id=1271")
-    print outputLinks
-    '''
+
     return outputLinks
 
 def is_valid(url):
