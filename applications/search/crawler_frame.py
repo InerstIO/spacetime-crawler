@@ -55,13 +55,22 @@ class CrawlerFrame(IApplication):
                 #print link
                 ext = tldextract.extract(link.full_url) 
                 subdomain = '.'.join(ext[:2])
-                self.subdom[subdomain] += len(links) # count number of URLs from subdomains
+                self.subdom[subdomain] = 0 # count number of URLs from subdomains ==> move into if is_valid
                 if self.max_out[1] < len(links): # keep track of the page with most out links
                     self.max_out[1] = len(links)
-                    self.max_out[0] = link
+                    self.max_out[0] = link.full_url
                 for l in links:
                     if is_valid(l):
                         self.frame.add(Fengy12Link(l))
+                        self.subdom[subdomain] += 1 # count number of URLs from subdomains
+                if not self.succ_ctr%10: # record analytics data periodically
+                    with open('analytics', 'w') as f:
+                        f.write('# crawled: ' + str(self.succ_ctr))
+                        f.write('subdomains:\n')
+                        for item in self.subdom.items():
+                            f.write('   '+item[0] + ', ' + str(item[1]) + '\n')
+                        f.write('\ninvalid links: '+str(self.invalid_ctr)+'\n\n')
+                        f.write('page with the most out links: '+str(self.max_out[0]))
 
     def shutdown(self):
         print (

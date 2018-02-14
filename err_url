@@ -119,3 +119,23 @@
 'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/Classes/2013S-77B?action=download&upname=HW4.pdf | Mime does not match
 'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/Classes/2013S-77B?action=download&upname=HW2.pdf | Mime does not match
 'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/Classes/2013S-77B?action=download&upname=HW5.pdf | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/~ajfrank | Forbidden
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/~sforouza | Forbidden
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | https://cml.ics.uci.edu/xmlrpc.php?rsd | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/comments/feed | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/xmlrpc.php | Method Not Allowed
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-includes/wlwmanifest.xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/feed | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/~ajfrank | Forbidden
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/~sforouza | Forbidden
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | https://cml.ics.uci.edu/xmlrpc.php?rsd | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/comments/feed | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/xmlrpc.php | Method Not Allowed
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-includes/wlwmanifest.xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/feed | Mime does not match
