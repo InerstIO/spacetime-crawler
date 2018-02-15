@@ -52,7 +52,7 @@ class CrawlerFrame(IApplication):
             link = unprocessed_links[0]
             print "Got a link to download:", link.full_url
             downloaded = link.download()
-            with open('downloaded/'+link.full_url.replace('/','_').replace(':',''),'w') as f:
+            with open('downloaded/'+re.sub(r'[\W_]+', ' ',link.full_url),'w') as f:
                 f.write(json.dumps(downloaded, default=self.UrlResponse2dict))
             try:
                 links = extract_next_links(downloaded)
@@ -129,7 +129,7 @@ def is_valid(url):
             + "|wav|avi|mov|mpeg|ram|m4v|mkv|ogg|ogv|pdf" \
             + "|ps|eps|tex|ppt|pptx|doc|docx|xls|xlsx|names|data|dat|exe|bz2|tar|msi|bin|7z|psd|dmg|iso|epub|dll|cnf|tgz|sha1" \
             + "|thmx|mso|arff|rtf|jar|csv"\
-            + "|rm|smil|wmv|swf|wma|zip|rar|gz)$", parsed.path.lower() + '/' + parsed.query.lower()) # made some modification here
+            + "|rm|smil|wmv|swf|wma|zip|rar|gz)$", parsed.path.lower() + parsed.query.lower()) # made some modification here
 
     except TypeError:
         print ("TypeError for ", parsed)
