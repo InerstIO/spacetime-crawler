@@ -12,6 +12,7 @@ from uuid import uuid4
 
 from collections import Counter
 import tldextract
+import json
 
 logger = logging.getLogger(__name__)
 LOG_HEADER = "[CRAWLER]"
@@ -36,12 +37,23 @@ class CrawlerFrame(IApplication):
         print l.full_url
         self.frame.add(l)
 
+    def UrlResponse2dict(self, UrlResponse):
+        return {'url':UrlResponse.url,
+                'content':UrlResponse.content,
+                'error_message':UrlResponse.error_message,
+                'headers':UrlResponse.headers,
+                'http_code':UrlResponse.http_code,
+                'is_redirected':UrlResponse.is_redirected,
+                'final_url':UrlResponse.final_url}
+
     def update(self):
         unprocessed_links = self.frame.get(OneFengy12UnProcessedLink)
         if unprocessed_links:
             link = unprocessed_links[0]
             print "Got a link to download:", link.full_url
             downloaded = link.download()
+            with open('downloaded/'+link.full_url.replace('/','_').replace(':',''),'w') as f:
+                f.write(json.dumps(downloaded, default=self.UrlResponse2dict))
             try:
                 links = extract_next_links(downloaded)
             except Exception as e:
