@@ -1361,3 +1361,102 @@
 'NoneType' object has no attribute 'xpath' | http://emj.ics.uci.edu/papers/machine-learning-papers/feed | Mime does not match
 'NoneType' object has no attribute 'xpath' | http://emj.ics.uci.edu/wp-content/emj/uploads/
 arXiv_Mjolsness_1212.0582.pdf | Not Found
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/%7elboyles | Not Found
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/~xhx/project/DNAzip | Forbidden
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/~ajfrank | Forbidden
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/~sforouza | Forbidden
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-content/cml/plugins/wp-shortcode/css/tipsy.css?ver=4.9.1 | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-content/cml/themes/bonpress-cml/style.css?ver=4.9.1 | Mime does not match
+'NoneType' object has no attribute 'xpath' | https://cml.ics.uci.edu/xmlrpc.php?rsd | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/comments/feed | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/xmlrpc.php | Method Not Allowed
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-content/cml/plugins/wp-shortcode/css/wp-shortcode.css?ver=4.9.1 | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-includes/wlwmanifest.xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/feed | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/~wping | Forbidden
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Fcourses%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Fcourses%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/courses/feed | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Faiml%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Faiml%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/2017/06/singh-talk-oc-acm-chapter/feed | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2F2017%2F06%2Fsingh-talk-oc-acm-chapter%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2F2017%2F06%2Fsingh-talk-oc-acm-chapter%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Falumni%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/~sswamida | Not Found
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Falumni%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/~dchudova | Forbidden
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Fsubscribe%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Fsubscribe%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/category/news/feed | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Faiml%2Fml-reading-group%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Faiml%2Fml-reading-group%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/2017/11/new-faculty-member-eric-sudderth/feed | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2F2017%2F11%2Fnew-faculty-member-eric-sudderth%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2F2017%2F11%2Fnew-faculty-member-eric-sudderth%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2F2017%2F11%2Fphd-students-win-best-poster-awards%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/2017/11/phd-students-win-best-poster-awards/feed | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2F2017%2F11%2Fphd-students-win-best-poster-awards%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Fhome%2Fcontact-us%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-content/cml/plugins/wp-google-maps/css/wpgmza_style.css?ver=6.4.03 | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Fhome%2Fcontact-us%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/books/feed | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Fbooks%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Fbooks%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Ffaculty%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/~chenl | Not Found
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Ffaculty%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Fhome%2Fabout-us%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Fhome%2Fabout-us%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Fsponsors-funding%2F | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://cml.ics.uci.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcml.ics.uci.edu%2Fsponsors-funding%2F&format=xml | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/~ngallo1 | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/misc/cs179/pyGM_LoopyBP.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/misc/cs179/pyGM_CSP_2.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/misc/cs179/pyGM_BayesNet.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/misc/cs179/pyGM_CSP_1.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/misc/cs179/pyGM_Learning.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/misc/cs179/pyGM_HMM.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/misc/cs179/pyGM_DualDecomp.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture02.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture04.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture17.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture26.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture22.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture21.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture12.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture20.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture24.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture10.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture11.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture18.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture05.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture07.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture08.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/~okuchaie | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture23.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture03.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture06.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs178/Lecture01.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture03.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture08.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture05.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture22part.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture12.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture07.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture20.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture11.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture10.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture16.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture06.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture04.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture18.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture02.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://sli.ics.uci.edu/video/cs274a/Lecture17.html | Not Found
+'NoneType' object has no attribute 'xpath' | http://www.ics.uci.edu/~tnguye90 | Not Found
+'NoneType' object has no attribute 'xpath' | http://sdcl.ics.uci.edu/wp-json | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://sdcl.ics.uci.edu/feed | Mime does not match
+'NoneType' object has no attribute 'xpath' | http://sdcl.ics.uci.edu/wp-includes/wlwmanifest.xml | Mime does not match
