@@ -1,5 +1,5 @@
 import logging
-from datamodel.search.Fengy12_datamodel import Fengy12Link, OneFengy12UnProcessedLink, add_server_copy, get_downloaded_content
+from datamodel.search.Fengy12YunluyEnzhengYuanzhl4_datamodel import Fengy12YunluyEnzhengYuanzhl4Link, OneFengy12YunluyEnzhengYuanzhl4UnProcessedLink, add_server_copy, get_downloaded_content
 from spacetime.client.IApplication import IApplication
 from spacetime.client.declarations import Producer, GetterSetter, Getter, ServerTriggers
 from lxml import html,etree
@@ -17,14 +17,14 @@ import json
 logger = logging.getLogger(__name__)
 LOG_HEADER = "[CRAWLER]"
 
-@Producer(Fengy12Link)
-@GetterSetter(OneFengy12UnProcessedLink)
+@Producer(Fengy12YunluyEnzhengYuanzhl4Link)
+@GetterSetter(OneFengy12YunluyEnzhengYuanzhl4UnProcessedLink)
 @ServerTriggers(add_server_copy, get_downloaded_content)
 class CrawlerFrame(IApplication):
 
     def __init__(self, frame):
         self.starttime = time()
-        self.app_id = "Fengy12"
+        self.app_id = "Fengy12YunluyEnzhengYuanzhl4"
         self.frame = frame
         self.succ_ctr, self.invalid_ctr = 0, 0
         self.subdom = Counter()
@@ -33,7 +33,7 @@ class CrawlerFrame(IApplication):
 
     def initialize(self):
         self.count = 0
-        l = Fengy12Link("http://www.ics.uci.edu/")
+        l = Fengy12YunluyEnzhengYuanzhl4Link("http://www.ics.uci.edu/")
         print l.full_url
         self.frame.add(l)
 
@@ -47,7 +47,7 @@ class CrawlerFrame(IApplication):
                 'final_url':UrlResponse.final_url}
 
     def update(self):
-        unprocessed_links = self.frame.get(OneFengy12UnProcessedLink)
+        unprocessed_links = self.frame.get(OneFengy12YunluyEnzhengYuanzhl4UnProcessedLink)
         if unprocessed_links:
             link = unprocessed_links[0]
             print "Got a link to download:", link.full_url
@@ -73,7 +73,7 @@ class CrawlerFrame(IApplication):
                     self.max_out[0] = link.full_url
                 for l in links:
                     if is_valid(l):
-                        self.frame.add(Fengy12Link(l))
+                        self.frame.add(Fengy12YunluyEnzhengYuanzhl4Link(l))
                         self.subdom[subdomain] += 1 # count number of URLs from subdomains
                     else:
                         self.invalid_ctr += 1 # count invalid links
@@ -119,10 +119,11 @@ def is_valid(url):
     if parsed.scheme not in set(["http", "https"]):
         return False
     try:
-        # deal with traps including Repeating Directories, Extra Directories and Calendars
+        # deal with traps including Repeating Directories, Extra Directories, Calendars and sessionID
         if re.match(r"^.*?(/.+?/).*?\1.*$|^.*?/(.+?/)\2.*$", url) or \
             re.match(r"^.*(/misc|/sites|/all|/themes|/modules|/profiles|/css|/field|/node|/theme){3}.*$", url) or \
-            re.match(r"^.*calendar.*$", url):
+            re.match(r"^.*calendar.*$", url) or \
+            re.match(r"^.*(jsessionid|sid|affid)*$",parsed.path.lower()):
             return False
         return ".ics.uci.edu" in parsed.hostname \
             and not re.match(".*\.(css|js|bmp|gif|jpe?g|ico" + "|png|tiff?|mid|mp2|mp3|mp4"\

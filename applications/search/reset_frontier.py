@@ -7,7 +7,7 @@ import uuid
 
 sys.path.append(os.path.realpath(os.path.join(os.path.dirname(__file__), "../..")))
 
-from datamodel.search.Fengy12_datamodel import Fengy12ProjectionLink
+from datamodel.search.Fengy12YunluyEnzhengYuanzhl4_datamodel import Fengy12YunluyEnzhengYuanzhl4ProjectionLink
 from spacetime.client.IApplication import IApplication
 from spacetime.client.declarations import Deleter, Getter
 from lxml import html,etree
@@ -22,13 +22,13 @@ from spacetime.client.frame import frame
 logger = logging.getLogger(__name__)
 LOG_HEADER = "[DELETEFRONTIER]"
 
-@Deleter(Fengy12ProjectionLink)
-@Getter(Fengy12ProjectionLink)
+@Deleter(Fengy12YunluyEnzhengYuanzhl4ProjectionLink)
+@Getter(Fengy12YunluyEnzhengYuanzhl4ProjectionLink)
 class DeleteFrontierFrame(IApplication):
 
     def __init__(self, frame):
         self.starttime = time()
-        self.app_id = "Fengy12"
+        self.app_id = "Fengy12YunluyEnzhengYuanzhl4"
         self.frame = frame
 
 
@@ -37,10 +37,10 @@ class DeleteFrontierFrame(IApplication):
 
     def update(self):
         print "Deleting links. This might take a while."
-        ls = self.frame.get(Fengy12ProjectionLink)
+        ls = self.frame.get(Fengy12YunluyEnzhengYuanzhl4ProjectionLink)
         print "Found ", len(ls), " links to delete."
         for l in ls:
-            self.frame.delete(Fengy12ProjectionLink, l)
+            self.frame.delete(Fengy12YunluyEnzhengYuanzhl4ProjectionLink, l)
         print "Deleted all links."
         self.done = True
 

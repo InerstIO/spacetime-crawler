@@ -7,7 +7,7 @@ import uuid
 
 sys.path.append(os.path.realpath(os.path.join(os.path.dirname(__file__), "../..")))
 
-from datamodel.search.Fengy12_datamodel import Fengy12ProjectionLink
+from datamodel.search.Fengy12YunluyEnzhengYuanzhl4_datamodel import Fengy12YunluyEnzhengYuanzhl4ProjectionLink
 from spacetime.client.IApplication import IApplication
 from spacetime.client.declarations import Getter
 from lxml import html,etree
@@ -21,12 +21,12 @@ from spacetime.client.frame import frame
 logger = logging.getLogger(__name__)
 LOG_HEADER = "[CHECKFRONTIER]"
 
-@Getter(Fengy12ProjectionLink)
+@Getter(Fengy12YunluyEnzhengYuanzhl4ProjectionLink)
 class CheckFrontierFrame(IApplication):
 
     def __init__(self, frame):
         self.starttime = time()
-        self.app_id = "Fengy12"
+        self.app_id = "Fengy12YunluyEnzhengYuanzhl4"
         self.frame = frame
 
 
@@ -34,7 +34,7 @@ class CheckFrontierFrame(IApplication):
         pass
 
     def update(self):
-        ls = self.frame.get(Fengy12ProjectionLink)
+        ls = self.frame.get(Fengy12YunluyEnzhengYuanzhl4ProjectionLink)
         with open("frontier_summary.txt", "w") as f:
             f.write("url\tdownload_complete\n")
             for l in ls:
