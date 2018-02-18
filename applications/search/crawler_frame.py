@@ -47,7 +47,7 @@ class CrawlerFrame(IApplication):
                 'final_url':UrlResponse.final_url}
 
     def update(self):
-        unprocessed_links = self.frame.get(OneFengy12YunluyEnzhengYuanzhl4UnProcessedLink)
+        unprocessed_links = self.frame.get_new(OneFengy12YunluyEnzhengYuanzhl4UnProcessedLink)
         if unprocessed_links:
             link = unprocessed_links[0]
             print "Got a link to download:", link.full_url
@@ -73,8 +73,8 @@ class CrawlerFrame(IApplication):
                 for l in links:
                     if is_valid(l):
                         #print(l)##################################################
-                        with open('valid','a') as f:
-                            f.write(l + '\n')
+                        #with open('valid','a') as f:
+                        #    f.write(l + '\n')
                         self.frame.add(Fengy12YunluyEnzhengYuanzhl4Link(l))
                         self.subdom[subdomain] += 1 # count number of URLs from subdomains
                     else:
