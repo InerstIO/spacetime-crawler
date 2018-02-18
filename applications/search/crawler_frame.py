@@ -126,6 +126,8 @@ def is_valid(url):
     try:
         # deal with traps including Repeating Directories, Extra Directories, Calendars and sessionID
         # html, xml and php are the only valid URLs
+        # cited from support.archive-it.org - Modify crawl scope with a Regular Expression
+        #            & www.portent.com - Field Guide to Spider Traps: An SEO’s Companion
         if not re.match(r'.*(html|xml|php)$', url) or \
             re.match(r"^.*?(/.+?/).*?\1.*$|^.*?/(.+?/)\2.*$", url) or \
             re.match(r"^.*(/misc|/sites|/all|/themes|/modules|/profiles|/css|/field|/node|/theme){3}.*$", url) or \
