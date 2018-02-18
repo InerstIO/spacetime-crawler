@@ -72,6 +72,9 @@ class CrawlerFrame(IApplication):
                     self.max_out[0] = link.full_url
                 for l in links:
                     if is_valid(l):
+                        #print(l)##################################################
+                        with open('valid','a') as f:
+                            f.write(l + '\n')
                         self.frame.add(Fengy12YunluyEnzhengYuanzhl4Link(l))
                         self.subdom[subdomain] += 1 # count number of URLs from subdomains
                     else:
@@ -122,7 +125,9 @@ def is_valid(url):
         return False
     try:
         # deal with traps including Repeating Directories, Extra Directories, Calendars and sessionID
-        if re.match(r"^.*?(/.+?/).*?\1.*$|^.*?/(.+?/)\2.*$", url) or \
+        # html, xml and php are the only valid URLs
+        if not re.match(r'.*(html|xml|php)$', url) or \
+            re.match(r"^.*?(/.+?/).*?\1.*$|^.*?/(.+?/)\2.*$", url) or \
             re.match(r"^.*(/misc|/sites|/all|/themes|/modules|/profiles|/css|/field|/node|/theme){3}.*$", url) or \
             re.match(r"^.*calendar.*$", url) or \
             re.match(r"^.*(jsessionid|sid|affid)",parsed.path.lower()):
