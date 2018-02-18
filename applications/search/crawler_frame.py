@@ -7,7 +7,7 @@ import re, os
 from time import time
 from uuid import uuid4
 
-from urlparse import urlparse, parse_qs
+from urlparse import urlparse, parse_qs, urljoin
 from uuid import uuid4
 
 from collections import Counter
@@ -57,14 +57,13 @@ class CrawlerFrame(IApplication):
             try:
                 links = extract_next_links(downloaded)
             except Exception as e:
-                self.invalid_ctr += 1 # count invalid links
+                #self.invalid_ctr += 1 # count invalid links
                 print('error:',e)
                 with open('err_url', 'a') as f:
                     f.write(str(e)+' | '+str(downloaded.url)+' | '+str(downloaded.error_message)+'\n')
             #links = extract_next_links(downloaded)
             else:
                 self.succ_ctr += 1 # count number of successfully downloaded links
-                #print link
                 ext = tldextract.extract(link.full_url) 
                 subdomain = '.'.join(ext[:2])
                 self.subdom[subdomain] += 0 # count number of URLs from subdomains ==> move into if is_valid
@@ -76,6 +75,7 @@ class CrawlerFrame(IApplication):
                         self.frame.add(Fengy12YunluyEnzhengYuanzhl4Link(l))
                         self.subdom[subdomain] += 1 # count number of URLs from subdomains
                     else:
+                        #print l+str('!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
                         self.invalid_ctr += 1 # count invalid links
                 if not self.succ_ctr%10: # record analytics data periodically
                     with open('analytics', 'w') as f:
@@ -104,7 +104,9 @@ def extract_next_links(rawDataObj):
     Suggested library: lxml
     '''
     html = etree.HTML(rawDataObj.content)
-    outputLinks = html.xpath('.//*/@href')
+    links = html.xpath('.//*/@href')
+
+    outputLinks = [urljoin(rawDataObj.final_url if rawDataObj.is_redirected else rawDataObj.url,l) for l in links] # get absolute form
 
     return outputLinks
 
@@ -123,7 +125,7 @@ def is_valid(url):
         if re.match(r"^.*?(/.+?/).*?\1.*$|^.*?/(.+?/)\2.*$", url) or \
             re.match(r"^.*(/misc|/sites|/all|/themes|/modules|/profiles|/css|/field|/node|/theme){3}.*$", url) or \
             re.match(r"^.*calendar.*$", url) or \
-            re.match(r"^.*(jsessionid|sid|affid)*$",parsed.path.lower()):
+            re.match(r"^.*(jsessionid|sid|affid)",parsed.path.lower()):
             return False
         return ".ics.uci.edu" in parsed.hostname \
             and not re.match(".*\.(css|js|bmp|gif|jpe?g|ico" + "|png|tiff?|mid|mp2|mp3|mp4"\
